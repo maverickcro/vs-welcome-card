@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, orange, yellow, #fff);
+    z-index: -1;
+}
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 20vh;
+    color: black;
+    align-items: center;
+    z-index: 3;
+    font-family: 'Open Sans Condensed', sans-serif;
+} 
+#logo{
+    grid-column: 2/3;
+    font-size: 24px;
+}
+.hamburger {
+    height: 24px;
+    width: auto;
+    justify-self: end;
+    cursor: pointer;
+}
+.villingen {
+    margin: auto;
+    position: relative;
+    bottom: 80px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 4px 2px 3px 3px #000;
+ }
+.hero {
+    height: 60%;
+    object-fit: cover;
+}
+section {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.headline {
+    position: absolute;
+    top: 400px;
+    left: 140px;
+    font-size: 80px;
+    color: white;
+    z-index: 3;
+}
+.hero::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+}
